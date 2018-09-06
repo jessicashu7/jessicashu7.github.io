@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css"></link>
+    <link rel="stylesheet" href="stylesheets/work.css"></link>
+
+    <title>Jessica Shu</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Jessica Shu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Work<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container text-center py-5">
+      <h2>My Coding Journey</h2>
+      <hr><br>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/eatin/eatin.png" alt="eatin logo">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <div data-toggle="collapse" data-target=".eatin-collapse" aria-expanded="false" aria-controls="eatin-ellipsis eatin-expand">
+              <h4>Eatin</h4>
+              <h6>Facebook University - Engineer Internship | <em>June - Aug 2018</em></h6><br>
+              <p>
+                The summer after my freshman year of college, I got to take part of the Facebook University for Engineering program at Facebook.
+                After 3 weeks of training of iOS app development in Objective-C, my team (total 3 interns) and I worked together to build our app, Eatin.
+                In short, Eatin is an app that encourages people to cook meals at home by making home-cooking social. Users can find/search for recipes,
+                post a photo of their cooking, and keep up with what others are cooking through a following system. Other features include saving recipes,
+                a tagging system for recipes, as well as liking/commenting on posts<span class="collapse show eatin-collapse" id="eatin-ellipsis">...</span>
+              </p>
+            </div>
+            <div class="collapse eatin-collapse" id="eatin-expand">
+              <p>
+                My internship started out with a fast-paced course taught by Codepath, which consisted of of many labs and projects,
+                including creating our own versions of Twitter (using Twitter API)  and Instagram (used Parse for backend).
+                I hadn’t had experience in iOS before this internship, but thanks to the first 3 weeks of training, I felt confident that my team and
+                I would be able to put out an app within 5 weeks. I first worked on was implementing the API call to store recipes in our MongoDB database,
+                which allowed us not to worry about having to constantly interact with our API. Other features I worked on include a swipe-to-save recipe feature,
+                a tagging system for recipes, and state persistency across multiple screens. One key takeaway from this project was learning how to design
+                the system—my team and I thought a lot about how to design our classes (such as Recipe, Post, Tag, Saved, to name a few),
+                and what the relationship between them would be like (we had one-to-many and many-to-many relationships implemented).
+                In the end, we were happy to have been able to finish the app that we planned out in the start.
+              </p>
+              <p>
+                Aside from improving my technical skills, I learned a lot about what it’s like to be at a top tech company!
+                It was awesome to be able to be surrounded by highly-motivated people who are passionate about the work they do.
+                Through constantly collaborating with my team, going to weekly team meetings and one-on-ones with my manager,
+                I got first hand experience in working in a professional environment. I also attended weekly talks and Q&As from top executives and other
+                workers within the company, which taught me about the different technical roles that are in software development.
+                Finally, I really enjoyed going to Mark’s weekly Q&As, attending the company all-hands, and reading internal company posts on Workplace,
+                where I got to learn about the vision of the company and where it planned on going with its products.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/othello/othello.png" alt="othello">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <div data-toggle="collapse" data-target=".othello-collapse" aria-expanded="false" aria-controls="othello-ellipsis othello-expand">
+              <h4>Othello</h4>
+              <h6>Class Project | <em>Nov - Dec 2017</em></h6><br>
+              <p>
+                I made Othello (also called Reversi) as the final project of my first programming class in college, taught in Python.
+                In the game, there are two players with either white or black pieces. At each turn, a player can use one piece to jump over a line of one
+                or more of the other player’s pieces, which “reverses” them to be the original player’s color.
+                The goal of the game is to end up with the most of one’s color pieces on the board when there are no more moves available.
+                My version of the game allowed the user to first choose the size of the board, the starting arrangement of the pieces, what “wintype” determines who wins
+                (most pieces or least pieces at the end), and which player would go first<span class="collapse show othello-collapse" id="othello-ellipsis">...</span>
+              </p>
+            </div>
+            <div class="collapse othello-collapse" id="othello-expand">
+              <p>
+                Before starting this project, my professor gave us an overview of how to use the tkinter library,
+                as well as how to properly implement the model-view-controller structure in a program, which helped me a lot throughout the entire process of making the game.
+                All in all, I had a lot of fun with this project as I got to build a game that I find pretty entertaining and have a working version of it to play.
+              </p>
+              <button id="othello-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#othello-pics">
+                see gifs here
+              </button>
+            </div>
+
+            <div class="modal fade" id="othello-pics" tabindex="-1" role="dialog" aria-labelledby="othelloLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="othelloLabel">Othello</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="othelloCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <ol class="carousel-indicators">
+                        <li data-target="#othelloCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#othelloCarousel" data-slide-to="1"></li>
+                        <li data-target="#othelloCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/othello/othello1.gif" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/othello/othello2.gif" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/othello/othello3.gif" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#othelloCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#othelloCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/amity/amity.png" alt="amity logo">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <div data-toggle="collapse" data-target=".amity-collapse" aria-expanded="false" aria-controls="amity-ellipsis amity-expand">
+              <h4>Amity</h4>
+              <h6>Technovation | <em>Jan - Apr 2017</em></h6><br>
+              <p>
+                I decided to enter in Technovation once again in my senior year of high school—this time learning about Android app development in Android Studio.
+                 My team and I built Amity, a social media app whose mission is to promote cultural awareness by providing a platform for individuals to share
+                 their cultural experiences. Amity was born out of the idea that the divisiveness and misunderstanding in the world could be improved by
+                 constructing community based on cultural understanding and inclusivity. Users from across the world can post about their own culture as well as
+                 read about others to gain a deeper understanding of our diversity. One feature of the app is a world globe, in which users can click anywhere on the map
+                  and view posts about the culture of that country<span class="collapse show amity-collapse" id="amity-ellipsis">...</span>
+              </p>
+            </div>
+            <div class="collapse amity-collapse" id="amity-expand">
+              <p>
+                This experience presented quite a challenge for me and my teammates, as none of us had worked with Android Studio before,
+                and had only basic Java knowledge. Aside from meeting weekly to discuss our ideas about our app,
+                we spent several weeks learning about Android app development by using online resources such as courses and videos on Youtube (super helpful!).
+                Even throughout the building process of the app, we were still watching videos to help us build the features we needed. For example,
+                I learned from videos online how to use PHP and SQL to interact with our mySQL database, which was essential to our app.
+                Overall, I am very glad I had this experience, as it taught me to how to solve problems independently as well as know how to find the right
+                resources to push me forward. To top it off, my team was awarded 2017 Senior Division Semifinalist!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/cosmos/hp.png" alt="harry potter video game">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <div data-toggle="collapse" data-target=".hp-collapse" aria-expanded="false" aria-controls="hp-ellipsis hp-expand">
+              <h4>Harry Potter Video Game</h4>
+              <h6>COSMOS Summer Camp Group Project | <em>Aug 2016</em></h6><br>
+              <p>In the summer before my senior year of high school, I went to COSMOS to learn about video game development (we used Javascript in Unity).
+                At the end, we worked in groups to create video games of our own. As a Potterhead, I half jokingly suggested a Harry Potter themed video game,
+                and my group agreed to it. Our game ended up to be a 2D platform game in which the user acts as the villain in a quest to get 7 Horcruxes.
+                In the villain’s way are obstacles such as dementors and Aurors, as well as bigger bosses that become Hocruxes.
+                The game is complete with sound effects and Harry Potter music in the background.
+                It’s riddikulusly good for any sirius Potterheads out there ;)<span class="collapse show hp-collapse" id="hp-ellipsis">...</span>
+              </p>
+            </div>
+            <div class="collapse hp-collapse" id="hp-expand">
+              <button id="hp-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#hp-pics">
+                see gifs here
+              </button>
+            </div>
+
+            <div class="modal fade" id="hp-pics" tabindex="-1" role="dialog" aria-labelledby="hpLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="hpLabel">Harry Potter Video Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="hpCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <ol class="carousel-indicators">
+                        <li data-target="#hpCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#hpCarousel" data-slide-to="1"></li>
+                        <li data-target="#hpCarousel" data-slide-to="2"></li>
+                        <li data-target="#hpCarousel" data-slide-to="3"></li>
+                        <li data-target="#hpCarousel" data-slide-to="4"></li>
+                        <li data-target="#hpCarousel" data-slide-to="5"></li>
+                        <li data-target="#hpCarousel" data-slide-to="6"></li>
+                        <li data-target="#hpCarousel" data-slide-to="7"></li>
+                        <li data-target="#hpCarousel" data-slide-to="8"></li>
+                        <li data-target="#hpCarousel" data-slide-to="9"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/cosmos/hptutorial.gif" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp1.gif" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp2.gif" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp3.gif" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp4.gif" alt="Fifth slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp5.gif" alt="Sixth slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp6.gif" alt="Seventh slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp7.gif" alt="Eight slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp8.gif" alt="Ninth slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/cosmos/hp9.gif" alt="Tenth slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#hpCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#hpCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/driving/crashcourse.png" alt="driving simulator">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <div data-toggle="collapse" data-target=".driving-collapse" aria-expanded="false" aria-controls="driving-ellipsis driving-expand">
+              <h4>Driving Simulator</h4>
+              <h6>AP Computer Science Group Project | <em>May 2016</em></h6><br>
+              <p>
+                For the final project of my AP Computer Science class (taught in Java),
+                my group and I created a driving simulator to help student drivers learn traffic rules.
+                The simulation focuses on a 4-way stop sign intersection and gave helpful facts and advice if the user makes a mistake
+                (not stopping at a stop sign, forgetting to do turn signals before making a turn, etc.)<span class="collapse show driving-collapse" id="driving-ellipsis">...</span>
+              </p>
+            </div>
+            <div class="collapse driving-collapse" id="driving-expand">
+              <p>
+                My group and I were asked to build anything we choose as long as it implemented a data structure.
+                As this was the first time that we worked on something from scratch and no guidance,
+                we were naive and created a whole city of different traffic situations to put the user through,
+                not fully understanding the difficulty of building it. Eventually, we came to our senses and settled for a smaller task:
+                having the user go through a 4-way stop sign intersection, implemented with a queue.
+                In hindsight, this experience taught me the importance of careful planning and setting accomplishable goals,
+                something I remind myself of whenever I start a new project.
+              </p>
+              <button id="driving-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#driving-pics">
+                see gifs here
+              </button>
+            </div>
+
+            <div class="modal fade" id="driving-pics" tabindex="-1" role="dialog" aria-labelledby="drivingLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="drivingLabel">Driving Simulator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="drivingCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <ol class="carousel-indicators">
+                        <li data-target="#drivingCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#drivingCarousel" data-slide-to="1"></li>
+                        <li data-target="#drivingCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="images/driving/ds-queue.gif" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/driving/ds-nostop.gif" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="images/driving/ds-crash.gif" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#drivingCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#drivingCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row" style>
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/vech/vech.png" alt="vech logo">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <div data-toggle="collapse" data-target=".technovation-collapse" aria-expanded="false" aria-controls="technovation-ellipsis technovation-expand technovation-photos">
+              <h4>Vech</h4>
+              <h6>Technovation | <em>Feb - May 2014</em></h6><br>
+              <p>
+                In my freshman year of high school, I was introduced to coding through a competition called the Technovation Challenge,
+                which is an international technology entrepreneurship program for girls to form teams to build mobile apps that solve problems.
+                After learning the basics of programming in MIT App Inventor (taught by our team mentor and the resources Technovation provided),
+                my team and I worked on our app, called Vech. Aimed at students who have trouble finding volunteer events and managing their time,
+                Vech is an easy way for them to find and sign up for events, keep track of their volunteer hours,
+                and manage their schedules with a calendar and to-do list<span class="collapse show technovation-collapse" id="technovation-ellipsis">...</span>
+              </p>
+            </div>
+            <div class="collapse technovation-collapse" id="technovation-expand">
+              <p>
+                It was through this experience of Technovation, and my amazing mentor, that propelled me to pursue computer science.
+                 Although it was difficult and intimidating at first, I really enjoyed going into the logical mindset that coding needed.
+                 I was also thrilled by the idea that I could build anything from mobile apps to websites with code.
+                 Overall I was excited by the possibilities and applications of computer science...and hence my coding journey began!
+              </p>
+            </div>
+
+
+          </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
