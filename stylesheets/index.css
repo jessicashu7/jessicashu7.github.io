@@ -5,16 +5,19 @@
   height:100vh;
 }
 
-
 body {
   color: white;
 }
 
-.display-2, h2 {
+#title, #subtitle {
   text-shadow: 2px 2px 4px #000000;
   font-weight: 600;
 }
 
 #aboutme {
   box-shadow: 2px 2px 4px #000000;
+}
+
+hr {
+  background-color: white;
 }
