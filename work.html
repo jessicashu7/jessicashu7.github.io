@@ -37,8 +37,61 @@
 
       <div class="container">
 
-        <!-- EATIN -->
+        <!-- ZotTrending -->
         <div class="row">
+          <div class="col-md-3">
+            <img class="img-fluid w-100" src="images/zothacks 2018/zothacks.PNG" alt="othello">
+          </div>
+          <div class="col-md-9 text-left pt-2">
+            <h4>ZotTrending</h4>
+            <h6>ZotHacks Submission | <em>Nov 2018</em></h6><br>
+            <p>
+              During fall quarter of my sophomore year of college, I attended my first hackathon, ZotHacks. It was a one-day hackathon geared
+              towards beginners, which encouraged me because I had never been to a hackathon before. At ZotHacks I attended several workshops including
+              one that taught how to create a web app with Flask, and another that taught me how to deploy the app on Google App Engine. These workshops
+              were very helpful in my team's project, <a href="http://www.zot-trending.appspot.com" target="_blank">ZotTrending</a>, which ended up
+              to be a website that displayed the top topics from several social media sites, including Reddit, Twitter, and Youtube.
+            </p>
+
+            <div class="collapse mb-3" id="zottrending-expand">
+              <p>
+                The experience taught me a lot about how to connect frontend and backend to create a web application, using Flask. It was also cool
+                to see our app deployed and accessible to the public! I mainly worked on retrieving information from Twitter and
+                Reddit API, and displaying it in HTML using Jinja and Bootstrap. Overall, I had a good time
+                collaborating with other UCI students, and I learned a lot about web applications!
+              </p>
+              <button id="zottrending-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#zottrending-pics">
+                see pics here
+              </button>
+            </div>
+
+            <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#zottrending-expand" aria-expanded="false" aria-controls="zottrending-expand">
+              <img class="my-0" src="images/expandarrow.png" alt="^">
+            </button>
+
+            <div class="modal fade" id="zottrending-pics" tabindex="-1" role="dialog" aria-labelledby="zottrendingLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="zottrendingLabel">ZotTrending</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/zothacks 2018/zottrending.PNG" alt="zottrending">
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EATIN -->
+        <div class="row my-5">
           <div class="col-md-3">
             <img class="img-fluid w-100" src="images/eatin/eatin.png" alt="eatin logo">
           </div>
@@ -93,7 +146,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <img class="d-block w-100" src="images/eatin/fb-sign.jpg" alt="First slide">
+                    <img class="d-block w-100" src="images/eatin/fb-sign.jpg" alt="fb sign">
 <!--
                     <div id="eatinCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                       <ol class="carousel-indicators">
