@@ -25,7 +25,7 @@
             <a class="nav-link" href="aboutme.html">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Work<span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="#">My Work<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -33,6 +33,7 @@
 
     <div class="container text-center py-5">
       <h2>My Coding Journey</h2>
+      <h5 class="text-secondary"><small>Here all my coding projects/activities, with the most recent on top!</small></h5>
       <hr><br>
 
       <div class="container">
@@ -43,8 +44,13 @@
             <img class="img-fluid w-100" src="images/zothacks 2018/zothacks.png" alt="zothacks">
           </div>
           <div class="col-md-9 text-left pt-2">
-            <h4>ZotTrending</h4>
-            <h6>ZotHacks Submission | <em>Nov 2018</em></h6><br>
+            <h4>ZotTrending
+                <a href="https://github.com/anthopark/ZotTrending" target="_blank" class="btn btn-sm btn-outline-secondary float-right">code</a>
+                <button id="zottrending-photos" class="btn btn-sm btn-outline-secondary float-right mr-1" type="button" data-toggle="modal" data-target="#zottrending-pics">
+                  pics
+                </button>
+            </h4>
+            <h6 class="text-secondary">ZotHacks Submission | <em>Nov 2018</em></h6><br>
             <p>
               During fall quarter of my sophomore year of college, I attended my first hackathon, ZotHacks. It was a one-day hackathon geared
               towards beginners, which encouraged me because I had never been to a hackathon before. At ZotHacks I attended several workshops including
@@ -60,9 +66,6 @@
                 Reddit API, and displaying it in HTML using Jinja and Bootstrap. Overall, I had a good time
                 collaborating with other UCI students, and I learned a lot about web applications!
               </p>
-              <button id="zottrending-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#zottrending-pics">
-                see pics here
-              </button>
             </div>
 
             <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#zottrending-expand" aria-expanded="false" aria-controls="zottrending-expand">
@@ -96,8 +99,13 @@
             <img class="img-fluid w-100" src="images/eatin/eatin.png" alt="eatin logo">
           </div>
           <div class="col-md-9 text-left pt-2">
-            <h4>Eatin</h4>
-            <h6>Facebook University - Engineer Internship | <em>June - Aug 2018</em></h6><br>
+            <h4>Eatin
+              <a href="https://github.com/jessjessandtre/Feast-fbu" target="_blank" class="btn btn-sm btn-outline-secondary float-right">code</a>
+              <button id="eatin-photos" class="btn btn-sm btn-outline-secondary float-right mr-1" type="button" data-toggle="modal" data-target="#eatin-pics">
+                pics
+              </button>
+            </h4>
+            <h6 class="text-secondary">Facebook University - Engineer Internship | <em>June - Aug 2018</em></h6><br>
             <p>
               The summer after my freshman year of college, I got to take part of the Facebook University for Engineering program at Facebook.
               After 3 weeks of training of iOS app development in Objective-C, my team (total 3 interns) and I worked together to build our app, Eatin.
@@ -111,7 +119,7 @@
                 My internship started out with a fast-paced course taught by Codepath, which consisted of of many labs and projects,
                 including creating our own versions of Twitter (using Twitter API)  and Instagram (used Parse for backend).
                 I hadn’t had experience in iOS before this internship, but thanks to the first 3 weeks of training, I felt confident that my team and
-                I would be able to put out an app within 5 weeks. I first worked on was implementing the API call to store recipes in our MongoDB database,
+                I would be able to put out an app within 5 weeks. I first worked on implementing the API call to store recipes in our MongoDB database,
                 which allowed us not to worry about having to constantly interact with our API. Other features I worked on include a swipe-to-save recipe feature,
                 a tagging system for recipes, and state persistency across multiple screens. One key takeaway from this project was learning how to design
                 the system—my team and I thought a lot about how to design our classes (such as Recipe, Post, Tag, Saved, to name a few),
@@ -127,9 +135,6 @@
                 Finally, I really enjoyed going to Mark’s weekly Q&As, attending the company all-hands, and reading internal company posts on Workplace,
                 where I got to learn about the vision of the company and where it planned on going with its products.
               </p>
-              <button id="eatin-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#eatin-pics">
-                see pics here
-              </button>
             </div>
 
             <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#eatin-expand" aria-expanded="false" aria-controls="eatin-expand">
@@ -183,8 +188,12 @@
             <img class="img-fluid w-100" src="images/othello/othello.PNG" alt="othello">
           </div>
           <div class="col-md-9 text-left pt-2">
-            <h4>Othello</h4>
-            <h6>Class Project | <em>Nov - Dec 2017</em></h6><br>
+            <h4>Othello
+              <button id="othello-photos" class="btn btn-sm btn-outline-secondary float-right" type="button" data-toggle="modal" data-target="#othello-pics">
+                gifs
+              </button>
+            </h4>
+            <h6 class="text-secondary">Class Project | <em>Nov - Dec 2017</em></h6><br>
             <p>
               I made Othello (also called Reversi) as the final project of my first programming class in college, taught in Python.
               In the game, there are two players with either white or black pieces. At each turn, a player can use one piece to jump over a line of one
@@ -200,9 +209,6 @@
                 as well as how to properly implement the model-view-controller structure in a program, which helped me a lot throughout the entire process of making the game.
                 All in all, I had a lot of fun with this project as I got to build a game that I find pretty entertaining and have a working version of it to play.
               </p>
-              <button id="othello-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#othello-pics">
-                see gifs here
-              </button>
             </div>
 
             <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#othello-expand" aria-expanded="false" aria-controls="othello-expand">
@@ -261,8 +267,13 @@
             <img class="img-fluid w-100" src="images/amity/amity.png" alt="amity logo">
           </div>
           <div class="col-md-9 text-left pt-2">
-            <h4>Amity</h4>
-            <h6>Technovation | <em>Jan - Apr 2017</em></h6><br>
+            <h4>Amity
+              <a href="https://github.com/superCodeTeam/Amity" target="_blank" class="btn btn-sm btn-outline-secondary float-right">code</a>
+              <button id="amity-photos" class="btn btn-sm btn-outline-secondary float-right mr-1" type="button" data-toggle="modal" data-target="#amity-pics">
+                gifs
+              </button>
+            </h4>
+            <h6 class="text-secondary">Technovation | <em>Jan - Apr 2017</em></h6><br>
             <p>
               I decided to enter in Technovation once again in my senior year of high school—this time learning about Android app development in Android Studio.
                My team and I built Amity, a social media app whose mission is to promote cultural awareness by providing a platform for individuals to share
@@ -282,9 +293,6 @@
                 Overall, I am very glad I had this experience, as it taught me to how to solve problems independently as well as know how to find the right
                 resources to push me forward. To top it off, my team was awarded 2017 Senior Division Semifinalist!
               </p>
-              <button id="amity-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#amity-pics">
-                see gifs here
-              </button>
             </div>
 
             <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#amity-expand" aria-expanded="false" aria-controls="amity-expand">
@@ -343,26 +351,29 @@
             <img class="img-fluid w-100" src="images/cosmos/hp.PNG" alt="harry potter video game">
           </div>
           <div class="col-md-9 text-left pt-2">
-            <h4>Harry Potter Video Game</h4>
-            <h6>COSMOS Summer Camp Group Project | <em>Aug 2016</em></h6><br>
+            <h4>Harry Potter Video Game
+              <a href="https://github.com/synicalsyntax/DieForMe" target="_blank" class="btn btn-sm btn-outline-secondary float-right">code</a>
+              <button id="hp-photos" class="btn btn-sm btn-outline-secondary float-right mr-1" type="button" data-toggle="modal" data-target="#hp-pics">
+                gifs
+              </button>
+            </h4>
+            <h6 class="text-secondary">COSMOS Summer Camp Group Project | <em>Aug 2016</em></h6><br>
             <p>In the summer before my senior year of high school, I went to COSMOS to learn about video game development (we used Javascript in Unity).
               At the end, we worked in groups to create video games of our own. As a Potterhead, I half jokingly suggested a Harry Potter themed video game,
               and my group agreed to it. Our game ended up to be a 2D platform game in which the user acts as the villain in a quest to get 7 Horcruxes.
-              In the villain’s way are obstacles such as dementors and Aurors, as well as bigger bosses that become Hocruxes.
+              In the villain’s way are obstacles such as dementors and Aurors, as well as bigger bosses that become Horcruxes.
               The game is complete with sound effects and Harry Potter music in the background.
               It’s riddikulusly good for any sirius Potterheads out there ;)
             </p>
-
+<!--
             <div class="collapse mb-3" id="hp-expand">
-              <button id="hp-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#hp-pics">
-                see gifs here
-              </button>
+
             </div>
 
             <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#hp-expand" aria-expanded="false" aria-controls="hp-expand">
               <img class="my-0" src="images/expandarrow.png" alt="^">
             </button>
-
+-->
             <div class="modal fade" id="hp-pics" tabindex="-1" role="dialog" aria-labelledby="hpLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -443,8 +454,13 @@
             <img class="img-fluid w-100" src="images/driving/crashcourse.PNG" alt="driving simulator">
           </div>
           <div class="col-md-9 text-left pt-2">
-            <h4>Driving Simulator</h4>
-            <h6>AP Computer Science Group Project | <em>May 2016</em></h6><br>
+            <h4>Driving Simulator
+              <a href="https://bitbucket.org/jessicashu7/crashcourse/src" target="_blank" class="btn btn-sm btn-outline-secondary float-right">code</a>
+              <button id="driving-photos" class="btn btn-sm btn-outline-secondary float-right mr-1" type="button" data-toggle="modal" data-target="#driving-pics">
+                gifs
+              </button>
+            </h4>
+            <h6 class="text-secondary">AP Computer Science Group Project | <em>May 2016</em></h6><br>
             <p>
               For the final project of my AP Computer Science class (taught in Java),
               my group and I created a driving simulator to help student drivers learn traffic rules.
@@ -462,9 +478,6 @@
                 In hindsight, this experience taught me the importance of careful planning and setting accomplishable goals,
                 something I remind myself of whenever I start a new project.
               </p>
-              <button id="driving-photos" class="btn btn-light" type="button" data-toggle="modal" data-target="#driving-pics">
-                see gifs here
-              </button>
             </div>
 
             <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#driving-expand" aria-expanded="false" aria-controls="driving-expand">
@@ -524,7 +537,7 @@
           </div>
           <div class="col-md-9 text-left pt-2">
             <h4>Vech</h4>
-            <h6>Technovation | <em>Feb - May 2014</em></h6><br>
+            <h6 class="text-secondary">Technovation | <em>Feb - May 2014</em></h6><br>
             <p>
               In my freshman year of high school, I was introduced to coding through a competition called the Technovation Challenge,
               which is an international technology entrepreneurship program for girls to form teams to build mobile apps that solve problems.
