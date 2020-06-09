@@ -1,8 +1,18 @@
 #profile {
-  height:240px;
-  width: 240px;
+  height:300px;
+  width: 300px;
 }
 
-.links {
+.logo {
     height:34px;
+}
+
+.logoButton {
+  background-color:#ebeefa;
+  border-color:#ebeefa;
+}
+
+#aboutMeContainer{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }

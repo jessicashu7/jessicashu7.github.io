@@ -1,23 +1,39 @@
-.backgroundimg {
+#jumboDiv {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height:100vh;
-}
-
-body {
+  min-height:75vh;
   color: white;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 #title, #subtitle {
-  text-shadow: 2px 2px 4px #000000;
-  font-weight: 600;
+  text-shadow: 1px 1px 2px #000000;
 }
 
-#aboutme {
-  box-shadow: 2px 2px 4px #000000;
+#subtitle {
+  font-size: 2em;
 }
 
-hr {
+#jumboDiv hr {
   background-color: white;
+}
+
+#aboutMeDiv {
+  background-color:#ebeefa;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#workDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
