@@ -3,8 +3,92 @@
     <h1 class="lead py-2">Here all my coding projects/activities, with the most recent on top!</h1>
     <hr class="py-4"><br>
 
+    <!-- Fablix -->
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid w-100" src="images/fablix/main_page.png" alt="fablix">
+      </div>
+      <div class="col-md-9 text-left pt-2">
+        <h4>Fablix
+            <button id="fablix-photos" class="btn btn-sm btn-outline-secondary float-right" type="button" data-toggle="modal" data-target="#fablix-pics">
+              demo
+            </button>
+        </h4>
+        <h6 class="text-secondary">Course Project | <em>Apr - Jun 2020</em></h6><br>
+        <p>
+          Although I have done web development in the past (see Planeater and ZotTrending), I thought it would be fun to take a project class on web applications.
+          In this class, my groupmate and I worked on Fablix, which is a web application where users can search for movies by title/year/director/actor,
+          browse movies by name or genres, and finally buy movies. We also implemented a dashboard so that the application owners can insert new actors and movies
+          to the database.
+        </p>
+
+        <div class="collapse mb-3" id="fablix-expand">
+          <p>
+            Working on Fablix throughout the quarter helped me learn so much about web application development, so I enjoyed it a lot!
+            It helped me solidify concepts on RESTful API and microservice architecture, practice my HTML, CSS, and JavaScript/jQuery skills, as well as learn
+            a lot about MySQL procedures and database optimizations. Overall, it was a great class and interesting project that made me appreciate all the
+            work that goes into creating a full-stack web application. If you would like to see demos of Fablix that we submitted for class,
+            see <a href="https://www.youtube.com/watch?v=7Ki3OIvan5c&list=PLFhL8CKLdM0uDRM3G81TJ7mSNO1m72G9P" target="_blank">here</a>.
+          </p>
+        </div>
+
+        <button class="btn btn-light btn-block expand py-0" type="button" data-toggle="collapse" data-target="#fablix-expand" aria-expanded="false" aria-controls="fablix-expand">
+          <img class="my-0" src="images/expandarrow.png" alt="^">
+        </button>
+
+
+        <div class="modal fade" id="fablix-pics" tabindex="-1" role="dialog" aria-labelledby="fablixLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="fablixLabel">Fablix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div id="fablixCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <ol class="carousel-indicators">
+                    <li data-target="#fablixCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#fablixCarousel" data-slide-to="1"></li>
+                    <li data-target="#fablixCarousel" data-slide-to="2"></li>
+                    <li data-target="#fablixCarousel" data-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="images/fablix/login_browse_action.gif" alt="login and browse by action">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/fablix/single_movie_star.gif" alt="view results, view single movie page and single star page">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/fablix/add_movie.gif" alt="add movie to cart">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/fablix/place_order.gif" alt="place order">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#fablixCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#fablixCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   <!-- Stridon -->
-  <div class="row">
+  <div class="row my-5">
     <div class="col-md-3">
       <img class="img-fluid w-100" src="images/stridon/mascot.png" alt="logo">
     </div>
