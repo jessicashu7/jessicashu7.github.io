@@ -6,8 +6,3 @@
 [aria-expanded="false"] img {
   transform:rotate(180deg);
 }
-
-#workContainer{
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
