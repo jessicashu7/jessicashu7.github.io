@@ -32,6 +32,40 @@
 */
 export const WORK_INFO = [
   {
+    id: "tesla-intern",
+    image: {
+      src: "images/tesla/tesla-logo.png",
+      alt: "tesla logo"
+    },
+    title: "Tesla Mobile Engineer Internship",
+    subtitle: "Vehicle Software Team",
+    timeline: "Sep 2020 - Mar 2021",
+    description: `I decided to take the Fall quarter of my senior year off, as I wanted a more hands-on experience working on a different type of product/company. 
+    I was lucky enough to have the opportunity to work on the mobile team at Tesla (another fully remote internship). Although I have worked on mobile before, 
+    it was my first time working with Swift and React Native. This internship was definitely different than my previous ones at Facebook—while the Facebook 
+    internships are more project-structured (you are given a project + timeline, and milestones to hit throughout), this internship was more task-based. Thus, I 
+    got to work on various different areas/features of the app :) In addition, my team had a check-in meeting every morning, so we could talk about what we were 
+    working on and any issues we were facing. I really enjoyed these meetings because I could give others visibility into what I was doing, as well as learn about what 
+    other members of the team were working on. Another aspect that stood out to me about this internship was the fact that I was working on a user-facing product 
+    (in my other internships I worked on internal/debugging tools). I was able to work cross-functionally with other members of the design and QA team. Overall, 
+    I found this internship super enjoyable, so much so that I extended my internship and worked part-time while in school until March. I’m very grateful for my experience at Tesla!`,
+  },
+  {
+    id: "fb-2020",
+    image: {
+      src: "images/facebook-2020/facebook-logo.png",
+      alt: "facebook logo"
+    },
+    title: "Facebook Software Engineer Internship",
+    subtitle: "FB App Metrics Team",
+    timeline: "Jun - Sep 2020",
+    description: `Back at it once again! For summer 2020, I interned on the FB App Metrics Team, which builds metrics frameworks that increase confidence 
+    in the accuracy of metrics on the FB platform. During my internship, I built a feature for an internal debugging tool that allows engineers to understand 
+    why ad conversions are not generated. I got to do a mixture of both backend (Hack/PHP) and frontend (JavaScript/React). I had never used PHP or React before, 
+    so it was fun to be able to learn while doing. It was also interesting that it was my first fully-remote internship due to the pandemic, so I never met my team 
+    in person. Despite the distance, I still felt fully supported by my manager and learned a lot!`,
+  },
+  {
     id: "fablix",
     image: {
       src: "images/fablix/main_page.png",
