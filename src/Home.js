@@ -3,54 +3,34 @@ import {AboutMe, Work} from "containers";
 import Typist from 'react-typist';
 import React, {useState} from 'react';
 import {isMobileOnly} from "react-device-detect";
+import {Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
 
 function Home() {
   const [titleDone, setTitleDone] = useState(false);
 
   return (
-    <div>
-      <nav
+    <div >
+      <Navbar
         id="scrollspy-nav"
-        className="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-        <a className="navbar-brand" href="#jumboDiv">
-          Jessica Shu
-          <span className="sr-only">(current)</span>
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon">
-          </span>
-        </button>
-        <div
-          className="collapse navbar-collapse"
-          id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="#aboutMeDiv">
-                About Me
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#workDiv">
-                My Work
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div
-        id="jumboDiv"
-        className="jumbotron jumbotron-fluid"
+        bg="light"
+        expand="lg"
+        fixed="top"
+        variant="light">
+        <Navbar.Brand href="#intro">Jessica Shu</Navbar.Brand>
+        <Navbar.Toggle aria-controls="nav-bar-content" />
+        <Navbar.Collapse id="nav-bar-content">
+          <Nav className="mr-auto">
+            <Nav.Link href="#aboutme">About Me</Nav.Link>
+            <Nav.Link href="#work">Work</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <Jumbotron fluid
+        id="intro"
         style={{
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('images/LaSeine.jpg')"
         }}>
-        <div className="container text-center">
+        <Container className="text-center">
           {isMobileOnly ? (
             <React.Fragment>
               <h1 className={"display-2 greeting"}>
@@ -100,15 +80,16 @@ function Home() {
             </React.Fragment>
           )
           }
-        </div>
-      </div>
-      <div id="aboutMeDiv" className="py-5">
+        </Container>
+      </Jumbotron>
+
+      <div id="aboutme" className="py-5">
         <AboutMe />
       </div>
-      <div id="workDiv" className="py-5">
+      <div id="work" className="py-5">
         <Work />
       </div>
-    </div>
+    </div >
   );
 }
 

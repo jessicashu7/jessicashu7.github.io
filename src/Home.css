@@ -1,4 +1,4 @@
-#jumboDiv {
+#intro {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@
   font-size: 2em;
 }
 
-#aboutMeDiv {
+#aboutme {
   background-color:#ebeefa;
   width: 100%;
   min-height: 60vh;
@@ -26,7 +26,7 @@
   flex-direction: row;
 }
 
-#workDiv {
+#work {
   width: 100%;
   display: flex;
   align-items: center;

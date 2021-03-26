@@ -1,22 +1,19 @@
 import './AboutMe.css';
+import {Container, Row, Col, Image, Button} from 'react-bootstrap';
 
 function AboutMe() {
   return (
-    <div
+    <Container
       id="aboutMeContainer"
-      className="container text-center">
-      <div className="row align-items-center">
-        <div className="col-md-6">
-          <img
-            id="profile"
-            src="images/websitepfpic.png"
-            alt="My Picture"
-            className="rounded-circle" />
+      className="text-center">
+      <Row className="align-items-center">
+        <Col md={6}>
+          <Image id="profile" src="images/websitepfpic.png" alt="My Picture" roundedCircle />
           <br />
           <br />
-        </div>
+        </Col>
 
-        <div className="col-md-6 pt-2">
+        <Col md={6} className="pt-2">
           <h2 className="display-4">
             Hey, here's a little about me!
           </h2>
@@ -32,27 +29,29 @@ function AboutMe() {
           </p>
 
           <hr className="bg-secondary" />
-          <a
+
+          <Button
             href="https://www.linkedin.com/in/jessicashu7"
             target="_blank"
-            className="btn btn-light logoButton">
-            <img
+            variant="light logoButton">
+            <Image
               className="logo"
               src="images/linkedin-logo.png"
               alt="linkedin" />
-          </a>
-          <a
+          </Button>
+
+          <Button
             href="https://github.com/jessicashu7"
             target="_blank"
-            className="btn btn-light logoButton">
-            <img
+            variant="light logoButton">
+            <Image
               className="logo"
               src="images/github-logo.png"
               alt="github" />
-          </a>
-        </div>
-      </div>
-    </div>
+          </Button>
+        </Col>
+      </Row>
+    </Container>
 
   );
 }

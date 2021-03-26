@@ -1,12 +1,13 @@
 import './Work.css';
 import {WorkRow} from 'components';
 import {WORK_INFO} from './WorkInfo.js';
+import {Container} from 'react-bootstrap';
 
 function Work() {
   return (
-    <div
+    <Container
       id="workContainer"
-      className="container text-center px-5">
+      className="text-center px-5">
       <h2 className="display-4 py-2">
         My Coding Journey
       </h2>
@@ -20,7 +21,7 @@ function Work() {
         return <WorkRow key={rowInfo.id} rowInfo={rowInfo} />;
       })}
 
-    </div>
+    </Container>
   );
 }
 

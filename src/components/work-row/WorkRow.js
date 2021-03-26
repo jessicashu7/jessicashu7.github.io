@@ -1,45 +1,57 @@
 import './WorkRow.css';
-import {ModalCarousel} from 'components';
+import {ModalCarouselButton} from 'components';
 import React from 'react';
+import {Row, Col, Image, Button} from 'react-bootstrap';
+
 function WorkRow(props) {
   const {rowInfo} = {...props};
 
   return (
-    <div className="row my-5">
-      <div className="col-md-3">
-        <img
-          className="img-fluid w-100"
+    <Row className="my-5">
+      <Col md={3}>
+        <Image
+          fluid
+          className="w-100"
           src={rowInfo.image.src}
           alt={rowInfo.image.alt} />
-      </div>
+      </Col>
 
-      <div className="col-md-9 text-left pt-2">
+      <Col md={9} className="text-left pt-2">
         <h4>
           {rowInfo.title}
           { /* first item is most right*/
             rowInfo.links != null ? rowInfo.links.map((item, ind) => {
-              const classStyles = ind === 0 ? "btn btn-sm btn-outline-secondary float-right" : "btn btn-sm btn-outline-secondary float-right mr-1";
-
+              const classStyles = ind === 0 ? "float-right" : "float-right mr-1";
               if (item.type === "modal") {
-                return (
-                  <button
-                    key={`${rowInfo.id}-${ind}-photos`}
-                    className={classStyles}
-                    type="button"
-                    data-toggle="modal"
-                    data-target={`#${rowInfo.id}-pics`}> {/* id defined in ModalCarousel */}
-                    {item.label}
-                  </button>
-                );
+                if (rowInfo.modalTitle != null && rowInfo.modalCarouselItems != null && rowInfo.modalCarouselItems.length > 0) {
+                  return (
+                    <React.Fragment key={`${rowInfo.id}-${ind}-photos`}>
+                      <ModalCarouselButton
+                        id={rowInfo.id}
+                        title={rowInfo.modalTitle}
+                        carouselItems={rowInfo.modalCarouselItems}
+                        buttonLabel={item.label}
+                        buttonVariant="outline-secondary"
+                        buttonSize="sm"
+                        buttonClasses={classStyles}
+                      >
+                      </ModalCarouselButton>
+                    </React.Fragment>
+                  );
+                } else {
+                  return null;
+                }
               } else {
                 return (
-                  <a
+                  <Button
                     key={`${rowInfo.id}-${ind}-link`}
+                    variant="outline-secondary"
+                    size="sm"
+                    className={classStyles}
                     href={item.href}
-                    target="_blank"
-                    className={classStyles}>
+                    target="_blank">
                     {item.label}
-                  </a>
+                  </Button>
                 );
               }
             })
@@ -76,30 +88,25 @@ function WorkRow(props) {
               }
             </div>
 
-            <button
-              className="btn btn-light btn-block expand py-0"
-              type="button"
+            <Button
+              variant="light"
+              size="lg"
+              block
+              className="expand py-0"
               data-toggle="collapse"
               data-target={`#${rowInfo.id}-expand`}
               aria-expanded="false"
               aria-controls={`${rowInfo.id}-expand`}>
-              <img
+              <Image
                 className="my-0"
                 src="images/expandarrow.png"
                 alt="^" />
-            </button>
+            </Button>
           </React.Fragment>
         ) : null}
-
-        {rowInfo.modalTitle != null && rowInfo.modalCarouselItems != null && rowInfo.modalCarouselItems.length > 0 ? (
-          <ModalCarousel
-            id={rowInfo.id}
-            title={rowInfo.modalTitle}
-            carouselItems={rowInfo.modalCarouselItems}>
-          </ModalCarousel>
-        ) : null}
-      </div>
-    </div>);
+      </Col>
+    </Row>
+  );
 }
 
 export default WorkRow;
