@@ -1,11 +1,15 @@
 import './Work.css';
 import {WorkRow} from 'components';
 import {WORK_INFO} from './WorkInfo.js';
-import {Container} from 'react-bootstrap';
+import {Container, Button} from 'react-bootstrap';
+import React from 'react';
 
 function Work() {
+  const ref = React.createRef();
+
   return (
     <Container
+      ref={ref}
       id="workContainer"
       className="text-center px-5">
       <h2 className="display-4 py-2">
@@ -21,7 +25,16 @@ function Work() {
         return <WorkRow key={rowInfo.id} rowInfo={rowInfo} />;
       })}
 
-    </Container>
+      {/* there's also ref.current?.scrollIntoView but it's experimental */}
+      <Button
+        variant="outline-secondary"
+        size="md"
+        onClick={() => window.scroll({
+          top: (ref.current?.getBoundingClientRect().top ?? -window.scrollY) + window.scrollY,
+          left: (ref.current?.getBoundingClientRect().left ?? -window.scrollX) + window.scrollX,
+          behavior: 'smooth'
+        })}>back to top</Button>
+    </Container >
   );
 }
 

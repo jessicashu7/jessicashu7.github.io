@@ -1,13 +1,34 @@
 import './WorkRow.css';
 import {ModalCarouselButton} from 'components';
+import {AnimatedRow} from 'components/animated-components';
 import React from 'react';
-import {Row, Col, Image, Button} from 'react-bootstrap';
+import {Col, Image, Button} from 'react-bootstrap';
+import {useInView} from 'react-intersection-observer';
+import {useSpring, config} from 'react-spring';
+import {isMobileOnly} from "react-device-detect";
+import {Color} from "Colors";
 
 function WorkRow(props) {
   const {rowInfo} = {...props};
 
+  const {ref, inView, entry} = useInView({
+    /* Optional options */
+    threshold: isMobileOnly ? 0.25 : 0.75,
+  });
+
+  const {border} = useSpring({from: {border: 0}, to: {border: inView ? 1 : 0}, config: config.slow});
+
   return (
-    <Row className="my-5">
+    <AnimatedRow ref={ref} className="my-5" style={{
+      borderLeft:
+        border.to(
+          {
+            range: [0, 1],
+            output: [Color.blueTransparent, Color.blue]
+          }
+        ).to((b) => `solid 5px ${b}`),
+      borderRadius: 2,
+    }}>
       <Col md={3}>
         <Image
           fluid
@@ -15,7 +36,6 @@ function WorkRow(props) {
           src={rowInfo.image.src}
           alt={rowInfo.image.alt} />
       </Col>
-
       <Col md={9} className="text-left pt-2">
         <h4>
           {rowInfo.title}
@@ -105,7 +125,7 @@ function WorkRow(props) {
           </React.Fragment>
         ) : null}
       </Col>
-    </Row>
+    </AnimatedRow>
   );
 }
 

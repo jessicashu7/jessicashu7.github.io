@@ -4,12 +4,16 @@ import Typist from 'react-typist';
 import React, {useState} from 'react';
 import {isMobileOnly} from "react-device-detect";
 import {Container, Navbar, Nav, Jumbotron} from 'react-bootstrap';
+import {Color} from 'Colors';
+
+const aboutMeLink = "aboutme";
+const workLink = "work";
 
 function Home() {
   const [titleDone, setTitleDone] = useState(false);
 
   return (
-    <div >
+    <div>
       <Navbar
         id="scrollspy-nav"
         bg="light"
@@ -20,8 +24,8 @@ function Home() {
         <Navbar.Toggle aria-controls="nav-bar-content" />
         <Navbar.Collapse id="nav-bar-content">
           <Nav className="mr-auto">
-            <Nav.Link href="#aboutme">About Me</Nav.Link>
-            <Nav.Link href="#work">Work</Nav.Link>
+            <Nav.Link href={`#${aboutMeLink}`} >About Me</Nav.Link>
+            <Nav.Link href={`#${workLink}`}>Work</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -83,12 +87,16 @@ function Home() {
         </Container>
       </Jumbotron>
 
-      <div id="aboutme" className="py-5">
+      <div id={aboutMeLink} className="py-5" style={{backgroundColor: Color.purple}}>
         <AboutMe />
       </div>
-      <div id="work" className="py-5">
+
+      <div id={workLink} className="py-5">
         <Work />
       </div>
+
+      <div id="footer" className="py-3">Check out my code for this website on the&nbsp;<a href="https://github.com/jessicashu7/jessicashu7.github.io" target="_blank">github repo</a>!</div>
+
     </div >
   );
 }

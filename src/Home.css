@@ -17,7 +17,6 @@
 }
 
 #aboutme {
-  background-color:#ebeefa;
   width: 100%;
   min-height: 60vh;
   display: flex;
@@ -27,6 +26,14 @@
 }
 
 #work {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#footer {
   width: 100%;
   display: flex;
   align-items: center;
