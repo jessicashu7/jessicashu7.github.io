@@ -1,6 +1,7 @@
 /*
 {
   id: unique id used to prefix ids in the html,
+  type: type of work,
   image: {
     src: src path (relative to public folder),
     alt: alternative description when image isn't found
@@ -30,9 +31,17 @@
   ]
 }
 */
+
+export const FilterType = {
+  ALL: "All",
+  JOB: "Work Experience",
+  PROJECT: "Projects"
+};
+
 export const WORK_INFO = [
   {
     id: "tesla-intern",
+    type: FilterType.JOB,
     image: {
       src: "images/tesla/tesla-logo.png",
       alt: "tesla logo"
@@ -67,6 +76,7 @@ export const WORK_INFO = [
   },
   {
     id: "fablix",
+    type: FilterType.PROJECT,
     image: {
       src: "images/fablix/main_page.png",
       alt: "fablix"
@@ -111,6 +121,7 @@ export const WORK_INFO = [
   },
   {
     id: "stridon",
+    type: FilterType.PROJECT,
     image: {
       src: "images/stridon/mascot.png",
       alt: "logo"
@@ -162,6 +173,7 @@ export const WORK_INFO = [
   },
   {
     id: "WAdebuggingPayments",
+    type: FilterType.JOB,
     image: {
       src: "images/whatsapp/WhatsApplogo.png",
       alt: "whatsapp"
@@ -194,6 +206,7 @@ export const WORK_INFO = [
   },
   {
     id: "appjam",
+    type: FilterType.JOB,
     image: {
       src: "images/appjam/appjamlogo.png",
       alt: "appjam"
@@ -220,6 +233,7 @@ export const WORK_INFO = [
   },
   {
     id: "planeater",
+    type: FilterType.PROJECT,
     image: {
       src: "images/planeater/planeater.png",
       alt: "planeater"
@@ -249,6 +263,7 @@ export const WORK_INFO = [
   },
   {
     id: "zottrending",
+    type: FilterType.PROJECT,
     image: {
       src: "images/zothacks 2018/zothacks.png",
       alt: "zothacks"
@@ -275,6 +290,7 @@ export const WORK_INFO = [
   },
   {
     id: "eatin",
+    type: FilterType.JOB,
     image: {
       src: "images/eatin/eatin.png",
       alt: "eatin logo"
@@ -323,6 +339,7 @@ export const WORK_INFO = [
   },
   {
     id: "othello",
+    type: FilterType.PROJECT,
     image: {
       src: "images/othello/othello.PNG",
       alt: "othello"
@@ -363,6 +380,7 @@ export const WORK_INFO = [
   },
   {
     id: "amity",
+    type: FilterType.PROJECT,
     image: {
       src: "images/amity/amity.png",
       alt: "amity logo"
@@ -412,6 +430,7 @@ export const WORK_INFO = [
   },
   {
     id: "hp",
+    type: FilterType.PROJECT,
     image: {
       src: "images/cosmos/hp.PNG",
       alt: "harry potter video game"
@@ -482,6 +501,7 @@ export const WORK_INFO = [
   },
   {
     id: "driving",
+    type: FilterType.PROJECT,
     image: {
       src: "images/driving/crashcourse.PNG",
       alt: "driving simulator"
@@ -529,6 +549,7 @@ export const WORK_INFO = [
   },
   {
     id: "technovation",
+    type: FilterType.PROJECT,
     image: {
       src: "images/vech/vech.png",
       alt: "vech logo"

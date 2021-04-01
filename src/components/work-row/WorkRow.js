@@ -9,7 +9,8 @@ import {isMobileOnly} from "react-device-detect";
 import {Color} from "Colors";
 
 function WorkRow(props) {
-  const {rowInfo} = {...props};
+  const {rowInfo, style} = {...props};
+  const propStyle = style != null ? style : {};
 
   const {ref, inView, entry} = useInView({
     /* Optional options */
@@ -20,6 +21,7 @@ function WorkRow(props) {
 
   return (
     <AnimatedRow ref={ref} className="my-5" style={{
+      ...propStyle,
       borderLeft:
         border.to(
           {
@@ -125,7 +127,7 @@ function WorkRow(props) {
           </React.Fragment>
         ) : null}
       </Col>
-    </AnimatedRow>
+    </AnimatedRow >
   );
 }
 

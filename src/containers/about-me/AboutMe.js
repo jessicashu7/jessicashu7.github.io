@@ -58,6 +58,7 @@ function AboutMe() {
   });
 
   const [animating, setAnimating] = useState(false);
+  // note: onRest is called for every spring
   const trail = useTrail(aboutMeLinks.length, {to: {x: inView ? 1 : 0}, delay: 300, onStart: () => setAnimating(true), onRest: () => setAnimating(false), config: {mass: 10, tension: 280, friction: 120}});
 
   useEffect(() => {
@@ -121,7 +122,8 @@ function AboutMe() {
             Coding is my passion, and I love to be constantly learning new programming skills and gaining knowledge in various areas within Computer Science.
             If you would like to read about my coding journey, scroll down!
             My other hobbies include running/exercising, watching movies (especially action and sci-fi/fantasy), and reading.
-            Fun facts—I’m a huge Potterhead and I have a fraternal twin sister!
+            Fun facts—I’m a huge Potterhead and I have a fraternal&nbsp;
+            <a href="https://amandashu.github.io" target="_blank">twin sister</a>!
           </p>
 
           <div ref={ref}>
