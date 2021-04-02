@@ -61,6 +61,7 @@ export const WORK_INFO = [
   },
   {
     id: "fb-2020",
+    type: FilterType.JOB,
     image: {
       src: "images/facebook-2020/facebook-logo.png",
       alt: "facebook logo"
